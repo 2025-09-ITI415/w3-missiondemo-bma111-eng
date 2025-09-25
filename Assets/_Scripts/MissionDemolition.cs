@@ -61,6 +61,7 @@ public class MissionDemolition : MonoBehaviour
         mode = GameMode.playing;
 
         FollowCam.SWITCH_VIEW(FollowCam.eView.both);
+        showing = "Show Slingshot";
     }
 
     void UpdateGUI()

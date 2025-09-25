@@ -19,6 +19,7 @@ public class FollowCam : MonoBehaviour
     public eView nextView = eView.slingshot;
     void Awake()
     {
+        S = this; //GPT
         camZ = this.transform.position.z;
     }
 
