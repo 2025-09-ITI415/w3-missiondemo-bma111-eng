@@ -50,8 +50,12 @@ public class MissionDemolition : MonoBehaviour
         Projectile.DESTROY_PROJECTILES(); // This will be underlined in red  // d
 
         // Instantiate the new castle
+        //castle.transform.position = castlePos;
         castle = Instantiate<GameObject>(castles[level]);
-        castle.transform.position = castlePos;
+        //castle.transform.position = castlePos;
+
+        Debug.Log($"Castle pos: {castle}");
+        Debug.Log($"Castle pos: {castlePos}");
 
         // Reset the goal
         Goal.goalMet = false;
